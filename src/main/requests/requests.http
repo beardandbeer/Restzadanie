@@ -1,0 +1,27 @@
+GET http://localhost:8080/books
+
+###
+GET http://localhost:8080/books/2
+
+###
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "title": "Kasacja. Joanna Chyłka. Tom 1",
+  "author": "Mróz Remigiusz",
+  "year": "2015"
+}
+
+###
+PUT http://localhost:8080/books/4
+Content-Type: application/json
+
+{
+  "title": "Dom szpiegów ",
+  "author": "Silva Daniel",
+  "year": "2017"
+}
+
+###
+DELETE http://localhost:8080/books/3
